@@ -24,5 +24,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Publish to npm
         run: |
+          npm ci
           npm install
           npm publish --access public
