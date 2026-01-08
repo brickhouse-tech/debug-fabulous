@@ -1,3 +1,4 @@
+# need more confidence prior to this being rolled out
 name: Auto-merge Dependabot
 on: pull_request
 
