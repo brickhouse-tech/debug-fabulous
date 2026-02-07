@@ -1,7 +1,7 @@
 import globals from "globals";
 import js from "@eslint/js";
 import { defineConfig } from "eslint/config";
-import jestPlugin from "eslint-plugin-jest";
+import vitest from "@vitest/eslint-plugin";
 import tseslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 
@@ -19,16 +19,15 @@ export default defineConfig([
       globals: {
         ...globals.commonjs,
         ...globals.node,
-        ...jestPlugin.environments.globals.globals,
       },
     },
     plugins: {
       js,
-      jest: jestPlugin,
+      vitest,
       '@typescript-eslint': tseslint,
     },
     rules: {
-      ...jestPlugin.configs.recommended.rules,
+      ...vitest.configs.recommended.rules,
       ...tseslint.configs.recommended.rules,
       "no-unused-vars": "warn",
       "comma-dangle": ["error", "always-multiline"],
@@ -36,6 +35,8 @@ export default defineConfig([
       "@typescript-eslint/no-require-imports": "off",
       "@typescript-eslint/ban-ts-comment": "off",
       "@typescript-eslint/no-empty-function": "off",
+      "vitest/expect-expect": "off",
+      "vitest/no-identical-title": "off",
     },
     ignores: [
       'node_modules',
@@ -56,19 +57,18 @@ export default defineConfig([
       globals: {
         ...globals.commonjs,
         ...globals.node,
-        ...jestPlugin.environments.globals.globals,
       },
     },
     plugins: {
       js,
-      jest: jestPlugin,
+      vitest,
     },
     rules: {
-      ...jestPlugin.configs.recommended.rules,
+      ...vitest.configs.recommended.rules,
       "no-unused-vars": "warn",
       "comma-dangle": ["error", "always-multiline"],
-      "jest/no-done-callback": "off",
-      "jest/no-identical-title": "off",
+      "vitest/expect-expect": "off",
+      "vitest/no-identical-title": "off",
     },
     ignores: [
       'node_modules',
