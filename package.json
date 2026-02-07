@@ -32,8 +32,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "debug": "4.4.3",
-    "memoizee": "0.4"
+    "debug": "4.4.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^20",

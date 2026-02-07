@@ -1,8 +1,17 @@
 import { Debug, Debugger } from 'debug';
-import memoize from 'memoizee';
 import { LazyDebugFunc } from '../internals';
 
-const extend = (_debugger: Debugger) => {
+/**
+ * Singleton noop function - avoids creating new function on every disabled namespace call
+ */
+const NOOP: Debugger = (() => {}) as unknown as Debugger;
+
+/**
+ * Extends a debugger to support lazy evaluation via closures.
+ * When a function is passed instead of a string, it's only evaluated
+ * if the debugger is enabled.
+ */
+const extend = (_debugger: Debugger): Debugger => {
   const wrapped = (formatter: any, ...args: any[]) => {
     if (typeof formatter === 'function') {
       const ret = (formatter as LazyDebugFunc)();
@@ -13,23 +22,39 @@ const extend = (_debugger: Debugger) => {
     return _debugger(formatter, ...args);
   };
 
+  // Copy all properties from the original debugger
   return Object.assign(wrapped, _debugger);
 };
 
-const lazyEval = (debugInst: Debug) => {
-  function debug(namespace) {
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    function noop() {}
-    const instance = debugInst(namespace);
-    if (!instance.enabled) {
-      return Object.assign(noop, instance);
+/**
+ * Wraps the debug factory with lazy evaluation and memoization.
+ * Uses a simple Map for caching - much lighter than memoizee (~2.3MB savings).
+ */
+const lazyEval = (debugInst: Debug): Debug => {
+  const cache = new Map<string, Debugger>();
+
+  function debug(namespace: string): Debugger {
+    // Check cache first
+    let cached = cache.get(namespace);
+    if (cached !== undefined) {
+      return cached;
     }
-    return extend(instance);
+
+    const instance = debugInst(namespace);
+
+    if (!instance.enabled) {
+      // Use singleton noop with instance properties for disabled namespaces
+      cached = Object.assign(NOOP, instance);
+    } else {
+      cached = extend(instance);
+    }
+
+    cache.set(namespace, cached);
+    return cached;
   }
 
-  const debugMemoized = memoize(debug);
-
-  return Object.assign(debugMemoized, debugInst);
+  // Copy debug API methods (enable, disable, etc.) to our wrapped function
+  return Object.assign(debug, debugInst) as Debug;
 };
 
 export default lazyEval;
