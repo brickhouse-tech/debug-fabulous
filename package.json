@@ -21,6 +21,7 @@
     "lib"
   ],
   "scripts": {
+    "bench": "npm run build && vitest bench",
     "build": "rm -rf lib && npx tsc",
     "docs:api:markdown": "npx typedoc --theme markdown --exclude ./src/test --out ./docs/api ./src",
     "docs:api:website": "npx typedoc --exclude ./src/test --out docs ./src",

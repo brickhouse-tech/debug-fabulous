@@ -6,4 +6,9 @@ export default defineConfig({
     include: ['test/**/*.{test,spec}.{js,ts}'],
     environment: 'node',
   },
+  bench: {
+    globals: true,
+    include: ['test/**/*.bench.{js,ts}'],
+    environment: 'node',
+  },
 });
