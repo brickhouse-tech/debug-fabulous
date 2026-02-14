@@ -127,6 +127,10 @@ const debug = spawnable('app');
 2. **Singleton no-op** — Disabled namespaces get a shared no-op function instead of allocating per-instance.
 3. **Lazy closures** — When you pass a function, it's never invoked if the namespace is disabled. No string allocation, no concatenation, no `JSON.stringify()`.
 
+## Sponsor
+
+If you find this project useful, consider [sponsoring @nmccready](https://github.com/sponsors/nmccready) to support ongoing maintenance and development. ❤️
+
 ## License
 
 [MIT](./LICENSE) — Nicholas McCready and [contributors](https://github.com/brickhouse-tech/debug-fabulous/graphs/contributors).
