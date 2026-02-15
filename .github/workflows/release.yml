@@ -3,6 +3,9 @@ name: release
 on:
   push:
     branches: ["master"]
+    paths-ignore:
+      - '.devcontainer/**'
+      - '.github/workflows/**'
     tags-ignore: ['**']
 
 jobs:

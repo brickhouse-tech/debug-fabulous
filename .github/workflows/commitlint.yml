@@ -3,9 +3,14 @@ name: commitlint
 on:
   workflow_call:
   push:
+    paths-ignore:
+      - '.devcontainer/**'
+      - '.github/workflows/**'
   pull_request:
     branches: ["master"]
-
+    paths-ignore:
+      - '.devcontainer/**'
+      - '.github/workflows/**'
 jobs:
   commitlint:
     runs-on: ubuntu-22.04
