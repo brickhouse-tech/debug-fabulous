@@ -15,9 +15,9 @@ export default defineConfig([
       "tmp/**",
     ],
   },
-  // TypeScript files
+  // TypeScript source files (with type-aware linting)
   {
-    files: ["**/*.ts", "**/*.tsx"],
+    files: ["src/**/*.ts", "src/**/*.tsx"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
@@ -46,6 +46,19 @@ export default defineConfig([
       "@typescript-eslint/no-empty-function": "off",
       "vitest/expect-expect": "off",
       "vitest/no-identical-title": "off",
+    },
+  },
+  // Config files (TS without project reference)
+  {
+    files: ["*.ts", "*.mjs"],
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: "module",
+      },
+      globals: {
+        ...globals.node,
+      },
     },
   },
   // JavaScript files
