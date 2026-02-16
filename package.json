@@ -43,7 +43,7 @@
     "@vitest/eslint-plugin": "^1.6.6",
     "commitlint": "20",
     "config": "^4.0.0",
-    "eslint": "9",
+    "eslint": "10",
     "hook-std": "4.0",
     "JSONStream": "1.X",
     "prettier": "^3.6.2",
