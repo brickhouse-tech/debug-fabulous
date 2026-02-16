@@ -6,9 +6,18 @@ import tseslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 
 export default defineConfig([
+  // Global ignores
+  {
+    ignores: [
+      "node_modules/**",
+      "dist/**",
+      "lib/**",
+      "tmp/**",
+    ],
+  },
   // TypeScript files
   {
-    files: ["**/*.ts", "**/*.tsx", "*.ts", "*.tsx"],
+    files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
@@ -38,17 +47,10 @@ export default defineConfig([
       "vitest/expect-expect": "off",
       "vitest/no-identical-title": "off",
     },
-    ignores: [
-      'node_modules',
-      'node_modules/**/*.js',
-      'dist',
-      'lib',
-      'tmp',
-    ]
   },
   // JavaScript files
   {
-    files: ["**/*.js", "**/*.jsx", "*.js", "*.jsx"],
+    files: ["**/*.js", "**/*.jsx"],
     languageOptions: {
       parserOptions: {
         ecmaVersion: 2020,
@@ -70,12 +72,5 @@ export default defineConfig([
       "vitest/expect-expect": "off",
       "vitest/no-identical-title": "off",
     },
-    ignores: [
-      'node_modules',
-      'node_modules/**/*.js',
-      'dist',
-      'lib',
-      'tmp',
-    ]
   },
 ]);
