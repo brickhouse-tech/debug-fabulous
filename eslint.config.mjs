@@ -6,9 +6,18 @@ import tseslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 
 export default defineConfig([
-  // TypeScript files
+  // Global ignores
   {
-    files: ["**/*.ts", "**/*.tsx", "*.ts", "*.tsx"],
+    ignores: [
+      "node_modules/**",
+      "dist/**",
+      "lib/**",
+      "tmp/**",
+    ],
+  },
+  // TypeScript source files (with type-aware linting)
+  {
+    files: ["src/**/*.ts", "src/**/*.tsx"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
@@ -38,17 +47,23 @@ export default defineConfig([
       "vitest/expect-expect": "off",
       "vitest/no-identical-title": "off",
     },
-    ignores: [
-      'node_modules',
-      'node_modules/**/*.js',
-      'dist',
-      'lib',
-      'tmp',
-    ]
+  },
+  // Config files (TS without project reference)
+  {
+    files: ["*.ts", "*.mjs"],
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: "module",
+      },
+      globals: {
+        ...globals.node,
+      },
+    },
   },
   // JavaScript files
   {
-    files: ["**/*.js", "**/*.jsx", "*.js", "*.jsx"],
+    files: ["**/*.js", "**/*.jsx"],
     languageOptions: {
       parserOptions: {
         ecmaVersion: 2020,
@@ -70,12 +85,5 @@ export default defineConfig([
       "vitest/expect-expect": "off",
       "vitest/no-identical-title": "off",
     },
-    ignores: [
-      'node_modules',
-      'node_modules/**/*.js',
-      'dist',
-      'lib',
-      'tmp',
-    ]
   },
 ]);
