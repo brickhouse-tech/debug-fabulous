@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.48](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.47...v2.0.48) (2026-02-18)
+
+
+### Bug Fixes
+
+* remove paths-ignore from tests.yml so PR checks run ([b13742a](https://github.com/brickhouse-tech/debug-fabulous/commit/b13742aa2d27bcf76e45aef378be0f0151d23464))
+
 ## 2.0.47 (2026-02-16)
 
 ## 2.0.46 (2026-02-15)
