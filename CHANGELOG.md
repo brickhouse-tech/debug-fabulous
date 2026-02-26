@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.52](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.51...v2.0.52) (2026-02-26)
+
+
+### Bug Fixes
+
+* **deps:** bump rollup from 4.57.1 to 4.59.0 ([70ae2a8](https://github.com/brickhouse-tech/debug-fabulous/commit/70ae2a87f661d3cb788a244d713eccb9ee6f9b80))
+
 ## [2.0.51](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.50...v2.0.51) (2026-02-26)
 
 ## [2.0.50](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.49...v2.0.50) (2026-02-20)
