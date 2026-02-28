@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.53](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.52...v2.0.53) (2026-02-28)
+
+
+### Bug Fixes
+
+* **deps:** bump minimatch ([09cfbda](https://github.com/brickhouse-tech/debug-fabulous/commit/09cfbdaf1b8a1e4ad2ca6ab1c82b9fa459de190b))
+
 ## [2.0.52](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.51...v2.0.52) (2026-02-26)
 
 
