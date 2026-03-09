@@ -11,4 +11,4 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN || github.token }}
           pull-request-number: ${{ github.event.pull_request.number }}
-          merge-method: squash
+          merge-method: merge
