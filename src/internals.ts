@@ -6,7 +6,7 @@ export interface DebugLazy extends Debug {
 
 export interface DebugFabulous extends DebugLazy {
   (namespace: string): DebuggerExt;
-  spawnable: (_namespace: string, _debugFabFactory?: Debug) => DebuggerExtSpawn;
+  spawnable: (namespace: string, debugFabFactory?: Debug) => DebuggerExtSpawn;
 }
 
 export type LazyDebugFunc = () => string | any[];
@@ -15,9 +15,9 @@ export type LazyDebugFunc = () => string | any[];
 export interface DebuggerExt extends Debugger {
   (lazyFunc: LazyDebugFunc): void;
   (...args: any[]): void;
-  spawn: (ns: string) => DebuggerExt;
+  spawn: (namespace: string) => DebuggerExt;
 }
 
 export interface DebuggerExtSpawn extends DebuggerExt {
-  spawn: (ns: string) => DebuggerExt;
+  spawn: (namespace: string) => DebuggerExt;
 }
