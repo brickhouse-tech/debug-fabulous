@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.57](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.56...v2.0.57) (2026-03-11)
+
+
+### Bug Fixes
+
+* change dependabot merge-method from squash to merge to preserve commit history ([d169927](https://github.com/brickhouse-tech/debug-fabulous/commit/d16992784bc1f315a07d3a8e04587b0bf745bc9a))
+* configure eslint to properly handle TypeScript interface parameters ([3ca0b8a](https://github.com/brickhouse-tech/debug-fabulous/commit/3ca0b8a6d38d5b14cb7a08805429bfc7fbad7ef2))
+
 ## [2.0.56](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.55...v2.0.56) (2026-03-05)
 
 ## [2.0.55](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.54...v2.0.55) (2026-03-04)
