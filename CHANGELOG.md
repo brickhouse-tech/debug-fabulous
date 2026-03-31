@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.60](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.59...v2.0.60) (2026-03-31)
+
+
+### Bug Fixes
+
+* resolve TypeScript 6 breaking changes ([bc98f0c](https://github.com/brickhouse-tech/debug-fabulous/commit/bc98f0c0d179cea9da1c2a8a21c7a8ac599d932d))
+
 ## [2.0.59](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.58...v2.0.59) (2026-03-26)
 
 ## [2.0.58](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.57...v2.0.58) (2026-03-24)
