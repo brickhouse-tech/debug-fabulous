@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.61](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.60...v2.0.61) (2026-04-06)
+
+
+### Bug Fixes
+
+* **deps:** bump vite from 8.0.3 to 8.0.5 ([894f5ff](https://github.com/brickhouse-tech/debug-fabulous/commit/894f5ff3194f433d9bfaabfb67d13c2e844ee9b7))
+
 ## [2.0.60](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.59...v2.0.60) (2026-03-31)
 
 
