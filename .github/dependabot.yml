@@ -11,6 +11,9 @@ updates:
       interval: "daily"
     cooldown: 
       default-days: 7  
+    ignore:
+      - dependency-name: "sort-package-json"
+        versions: [">=3.7.0"]
     groups:
       all-dependencies:
         patterns:
