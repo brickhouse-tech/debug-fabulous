@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.74](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.73...v2.0.74) (2026-06-12)
+
+
+### Bug Fixes
+
+* **deps:** ignore sort-package-json >=3.7 (drops Node 20 support) ([#134](https://github.com/brickhouse-tech/debug-fabulous/issues/134)) ([860f28e](https://github.com/brickhouse-tech/debug-fabulous/commit/860f28e2948e7ba28d293842d1295dd3e70a6db8))
+* rename workflow test job ([#129](https://github.com/brickhouse-tech/debug-fabulous/issues/129)) ([d1d656a](https://github.com/brickhouse-tech/debug-fabulous/commit/d1d656a484827a981ab875b89351a6f9da8ce1c7))
+
 ## [2.0.73](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.72...v2.0.73) (2026-06-05)
 
 ## [2.0.72](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.71...v2.0.72) (2026-06-02)
