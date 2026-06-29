@@ -1,4 +1,4 @@
-name: tests
+name: ci
 on:
   workflow_call:
   push:
@@ -6,14 +6,14 @@ on:
   pull_request:
     branches: ["master"]
 jobs:
-  test:
+  org-tests:
     uses: brickhouse-tech/.github/.github/workflows/tests.yml@main
     with:
       build: true
 
-  tests-complete:
-    name: tests
-    needs: [test]
+  gate:
+    name: gate
+    needs: [org-tests]
     runs-on: ubuntu-latest
     if: always()
     steps:
