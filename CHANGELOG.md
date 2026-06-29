@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.75](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.74...v2.0.75) (2026-06-29)
+
+
+### Bug Fixes
+
+* **ci:** point tests-complete needs at 'test' job so required check reports ([e9eecd6](https://github.com/brickhouse-tech/debug-fabulous/commit/e9eecd6785a03a39aa088811d1b7bfb2c897b259))
+
 ## [2.0.74](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.73...v2.0.74) (2026-06-12)
 
 
