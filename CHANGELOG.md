@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.83](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.82...v2.0.83) (2026-07-15)
+
 ## [2.0.82](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.81...v2.0.82) (2026-07-14)
 
 ## [2.0.81](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.80...v2.0.81) (2026-07-13)
