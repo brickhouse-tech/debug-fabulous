@@ -14,6 +14,10 @@ updates:
     ignore:
       - dependency-name: "sort-package-json"
         versions: [">=3.7.0"]
+      # typescript-eslint peer-caps typescript at <6.1.0; hold TS on 6.x until
+      # @typescript-eslint supports TS 7 (see PR #154 ERESOLVE).
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     groups:
       all-dependencies:
         patterns:
