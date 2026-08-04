@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.90](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.89...v2.0.90) (2026-08-04)
+
+### Bug Fixes
+
+* **deps:** bump fast-uri from 3.1.4 to 3.1.5 ([bdcbd84](https://github.com/brickhouse-tech/debug-fabulous/commit/bdcbd84987a65ec93afb6bdc79b248735f28cd48))
+* **deps:** bump postcss from 8.5.19 to 8.5.25 ([03449f5](https://github.com/brickhouse-tech/debug-fabulous/commit/03449f571e761b1265dad5c369e8951c2856b9cc))
 ## [2.0.89](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.88...v2.0.89) (2026-08-04)
 ## [2.0.88](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.87...v2.0.88) (2026-08-03)
 ## [2.0.87](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.86...v2.0.87) (2026-07-31)
