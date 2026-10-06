@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.118](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.117...v2.0.118) (2026-10-06)
+
+### Bug Fixes
+
+* **deps:** bump source-map-js from 1.2.1 to 1.2.2 ([b943e07](https://github.com/brickhouse-tech/debug-fabulous/commit/b943e07220db4638637d6ac2ce0884859516084f))
+
 ## [2.0.117](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.116...v2.0.117) (2026-10-06)
 
 ## [2.0.116](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.115...v2.0.116) (2026-10-05)
