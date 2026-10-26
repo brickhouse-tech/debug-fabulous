@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.126](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.125...v2.0.126) (2026-10-26)
+
+### Bug Fixes
+
+* **deps:** bump fast-uri from 3.1.8 to 3.1.9 ([3bb9cd2](https://github.com/brickhouse-tech/debug-fabulous/commit/3bb9cd2e2bee9c7622dbad3331f48f4d7af40892))
+
 ## [2.0.125](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.124...v2.0.125) (2026-10-26)
 
 ## [2.0.124](https://github.com/brickhouse-tech/debug-fabulous/compare/v2.0.123...v2.0.124) (2026-10-23)
